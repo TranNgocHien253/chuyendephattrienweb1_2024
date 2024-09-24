@@ -1,60 +1,153 @@
 <?php
+
 declare(strict_types=1);
 
-require_once 'I.php';
-require_once 'C.php';
+
 require_once 'A.php';
 require_once 'B.php';
+require_once 'C.php';
+require_once 'I.php';
 
-$a = new A();
-$b = new B();
+class demo
+{
+    // public function typeAreturnI(): A
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new I();
+    // }
+    // public function typeBreturnI(): B
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new I();
+    // }
+    // public function typeCreturnI(): C
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new I();
+    // }
+    // public function typeIreturnI(): I
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new I();
+    // }
+    // public function typeNullreturnI(): null
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new I();
+    // }
 
-$a->a1();
-$a->f();  
-
-$b->b1(); 
-$b->f();  
-
-class Demo {
-    public function typeXReturnY(string $type) {
-        echo __FUNCTION__ . "<br>";
-        
-        switch ($type) {
-            case 'I':
-                return new class implements I {
-                    public function f() {
-                        echo "This is function f from anonymous class implementing I.<br>";
-                    }
-                };
-            case 'A':
-                return new A();
-            case 'B':
-                return new B();
-            case 'C':
-                return new C();
-            default:
-                return null; 
-        }
+    public function typeAreturnA(): A
+    {
+        echo __FUNCTION__ . "</br>";
+        return new A();
     }
+    // public function typeBreturnA(): B
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new A();
+    // }
+    public function typeCreturnA(): C
+    {
+        echo __FUNCTION__ . "</br>";
+        return new A();
+    }
+    public function typeIreturnA(): I
+    {
+        echo __FUNCTION__ . "</br>";
+        return new A();
+    }
+    // public function typeNullreturnA(): null
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new A();
+    // }
+
+
+    // public function typeAreturnB(): A
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new B();
+    // }
+    public function typeBreturnB(): B
+    {
+        echo __FUNCTION__ . "</br>";
+        return new B();
+    }
+    public function typeCreturnB(): C
+    {
+        echo __FUNCTION__ . "</br>";
+        return new B();
+    }
+    public function typeIreturnB(): I
+    {
+        echo __FUNCTION__ . "</br>";
+        return new B();
+    }
+    // public function typeNullreturnB(): null
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new B();
+    // }
+
+
+    public function typeAreturnC(): A
+    {
+        echo __FUNCTION__ . "</br>";
+        return new C();
+    }
+
+    // public function typeBreturnC(): B
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new C();
+    // }
+    public function typeCreturnC(): C
+    {
+        echo __FUNCTION__ . "</br>";
+        return new C();
+    }
+    public function typeIreturnC(): I
+    {
+        echo __FUNCTION__ . "</br>";
+        return new C();
+    }
+    // public function typeNullreturnC(): null
+    // {
+    //     echo __FUNCTION__ . "</br>";
+    //     return new C();
+    // }
+
+
+    
+
 }
 
-$demo = new Demo();
+////call(ktraham)
 
-$instanceA = $demo->typeXReturnY('A');
-$instanceB = $demo->typeXReturnY('B');
-$instanceI = $demo->typeXReturnY('I');
+$demo = new demo();
+// $demo->typeAreturnI();
+// $demo->typeBreturnI();
+// $demo->typeCreturnI();
+// $demo->typeIreturnI();
+// $demo->typeNullreturnI();
 
-if ($instanceI !== null) {
-    $instanceI->f();
-}
+$demo->typeAreturnA();
+// $demo->typeBreturnA();
+$demo->typeCreturnA();
+$demo->typeIreturnA();
+// $demo->typeNullreturnA();
 
-if ($instanceA !== null) {
-    $instanceA->a1();
-    $instanceA->f();  
-}
+// $demo->typeAreturnB();
+$demo->typeBreturnB();
+$demo->typeCreturnB();
+$demo->typeIreturnB();
+// $demo->typeNullreturnB();
 
-if ($instanceB !== null) {
-    $instanceB->b1(); 
-    $instanceB->f();   
-}
-?>
+// $demo->typeAreturnC();
+// $demo->typeBreturnC();
+$demo->typeCreturnC();
+$demo->typeIreturnC();
+// $demo->typeNullreturnC();
+
+
+
