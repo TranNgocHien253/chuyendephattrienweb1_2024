@@ -14,7 +14,7 @@ $url_path = str_replace('\\', '/', $url_path);
     <div class="container">
         <div class="main-content">
             <div class="post-card">
-                <img src="image (1).jpg" alt="Post Image" class="post-image">
+                <img src="3073-screenshot.jpg" alt="Post Image" class="post-image">
                 <div class="post-content">
                     <h2>Lorem Ipsum Dolor</h2>
                     <div class="post-info">
