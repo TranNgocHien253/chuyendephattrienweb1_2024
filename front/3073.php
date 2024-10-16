@@ -1,7 +1,8 @@
 <?php
 $url_host = 'http://' . $_SERVER['HTTP_HOST'];
 $pattern_document_root = addcslashes(realpath($_SERVER['DOCUMENT_ROOT']), '\\');
-$pattern_uri = '/' . preg_quote($pattern_document_root, '/') . '(.*)$/';
+
+$pattern_uri = '/' . $pattern_document_root . '(.*)$/';
 
 preg_match_all($pattern_uri, __DIR__, $matches);
 
@@ -25,7 +26,7 @@ $less->compileFile('less/3073.less', 'css/3073.css');
       
         <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
               <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="<?php echo $url_path ?>/css/1354.css" rel="stylesheet" type="text/css"/>
+        <link href="<?php echo $url_path ?>/css/3073.css" rel="stylesheet" type="text/css"/>
  
     </head>
     <body>

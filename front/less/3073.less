@@ -1,4 +1,3 @@
-// Define LESS variables
 @main-bg-color: #f4f4f4;
 @main-text-color: #666;
 @main-border-color: #03A9F4;
@@ -9,33 +8,35 @@
 @main-textinput-color: #f3f3f3;
 @transition-speed: 0.5s;
 
-@margin-left: 15px; // Example of margin variables
+@margin-left: 15px;
 @margin-top: 10px;
 @margin-bottom: 20px;
 @margin-right: 15px;
 @padding: 20px;
-@img-max-width: 100%; // Example image max width variables
+@margin: 0;
+@img-max-width: 100%;
 @img-min-width: 50px;
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: @main-bg-color;
 }
 
-.container {
+.type-3073 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: @margin;
 
     .main-content {
-        width: 65%;
+        // width: 65%;
         background-color: #fff;
         padding: @padding;
 
         .post-card {
             border: 2px dotted @main-border-color;
-            background-color: rgba(@main-border-color, 0.1); // Use rgba for colors in LESS
+            // background-color: rgba(@main-border-color, 5%);
+            background-color: fade(@main-border-color, 5%);
             padding: @padding;
 
             &:hover h2 {
@@ -44,7 +45,7 @@ body {
             }
 
             .post-image {
-                max-width: @img-max-width;
+                width: @img-max-width;
                 height: auto;
             }
 
@@ -88,7 +89,7 @@ body {
     }
 
     .sidebar {
-        width: 30%;
+        // width: 30%;
         padding: @padding;
         background-color: #fff;
 
@@ -97,7 +98,7 @@ body {
             margin-bottom: 20px;
 
             input {
-                width: 80%;
+                width: 100%;
                 padding: 10px;
                 border: none;
                 background-color: @main-textinput-color;
@@ -113,6 +114,11 @@ body {
                 color: #fff;
                 border: none;
                 cursor: pointer;
+
+                &:hover {
+                        background-color: @main-bg-btncolor;
+                        transition: all @transition-speed ease-in-out;
+                    }
             }
         }
 
@@ -157,7 +163,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .type-3073 {
         flex-direction: column;
 
         .main-content {

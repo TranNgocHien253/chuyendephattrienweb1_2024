@@ -1,0 +1,345 @@
+@text-color: #a4b099;
+@hover-color: #5f9c5f;
+@bg-color: #ffffff;
+@font-size-base: 16px;
+@font-size-large: 20%;
+@text-color-basic: #00000088;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.type-3188 {
+  margin: 0 @font-size-base 0 @font-size-base;
+  border-bottom: 1px solid @text-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 70px;
+
+  .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .navfake {
+    display: none;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+
+    .focusnav {
+      margin: @font-size-base;
+      padding: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      a {
+        color: @text-color;
+        font-size: @font-size-base;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: @text-color-basic;
+      }
+
+      span {
+        content: "";
+        width: calc(100% + 16px);
+        height: 13px;
+        background: #e9ebe7;
+        position: absolute;
+        top: 50%;
+        left: -4px;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .labala {
+      position: fixed;
+      visibility: hidden;
+      top: 70px;
+      background-color: @bg-color;
+      padding: @font-size-base;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      a {
+        color: @text-color;
+        font-weight: lighter;
+        text-decoration: none; /* Remove underline from links */
+    margin: 8px 0; /* Space between links */
+    padding: 5px 0; /* Vertical padding for links */
+    transition: color 0.3s;
+      }
+      a:hover {
+        color: #007bff; /* Color when hovering over links */
+    }
+    }
+
+    .hovernav {
+      display: flex;
+      align-items: center;
+      margin: 0 @font-size-base;
+      padding: 10px;
+      position: relative;
+
+      a {
+        color: @text-color;
+        font-size: @font-size-base;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+
+        span {
+          content: "";
+          width: calc(100% + 16px);
+          height: 13px;
+          position: absolute;
+          top: 50%;
+          left: -120%;
+          z-index: -1;
+          display: flex;
+          justify-content: center;
+          transition: left 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+      }
+
+      .dropdown {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        background-color: @bg-color;
+        border: 1px solid #ccc;
+        z-index: 1;
+        width: 250px;
+        max-height: 0;
+        overflow: hidden;
+        padding: @font-size-base;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s 0.3s;
+
+        a {
+          color: @text-color;
+          padding: 5px 15px;
+          text-decoration: none;
+          display: block;
+          font-weight: lighter;
+        }
+
+        a:hover {
+          color: @text-color-basic;
+        }
+      }
+
+    }
+
+    .hovernav:hover {
+      span {
+        left: calc(0% - 8px);
+        background: #e9ebe7;
+      }
+    }
+
+    #Shop:hover {
+      #lightShop {
+        color: @text-color-basic;
+      }}
+    #Shop:hover 
+      #dropdownShop {
+        max-height: 1000dvh;
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+      }
+    
+    #Store:hover {
+      #lightStore {
+        color: @text-color-basic;
+      }
+
+      #dropdownStore {
+        max-height: 1000dvh;
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+      }
+    }
+
+    #Home:hover {
+      #lightHome {
+        color: @text-color-basic;
+      }
+
+      #dropdownHome {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+      }
+    }
+
+    #Pages:hover {
+      #lightPages {
+        color: @text-color-basic;
+      }
+
+      #dropdownPages {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+      }
+    }
+
+    #Blog:hover {
+      #lightBlog {
+        color: @text-color-basic;
+      }
+
+      #dropdownBlog {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+      }
+    }
+
+    #Landing:hover {
+      #lightLanding {
+        color: @text-color-basic;
+      }
+
+      #dropdownLanding {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+    transform: translateY(-20%);
+
+    .login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      a {
+        color: @text-color;
+        font-size: @font-size-base;
+        text-decoration: none;
+      }
+    }
+
+    .cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: @text-color;
+        font-size: @font-size-base;
+        text-decoration: none;
+        position: relative;
+      }
+
+      svg {
+        position: absolute;
+        transform: translateY(-5px);
+      }
+
+    }
+
+    .pointhover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .gridpoint {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 5px;
+        line-height: 5px;
+
+        .dot {
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: @text-color;
+          font-size: @font-size-base;
+          transition: all .3s ease-in-out;
+
+        }
+      }
+
+      .gridpoint:hover .dot:nth-child(4) {
+        transform: translate(200%, 0%);
+      }
+
+      .gridpoint:hover .dot:nth-child(8) {
+        transform: translate(0%, -200%);
+      }
+
+      .gridpoint:hover .dot:nth-child(7) {
+        transform: translate(200%, -200%);
+      }
+
+    }
+  }
+}
+
+#Shop:hover ~ .labala {
+  visibility: visible;
+}
+
+.Healthy {
+  border-bottom: 1px solid @text-color;
+  margin: 0 @font-size-base 0 @font-size-base;
+  padding: @font-size-base @font-size-large @font-size-base @font-size-large;
+
+  h1 {
+    margin: 0;
+  }
+
+  a {
+    color: @text-color;
+  }
+
+  span {
+    color: @text-color;
+  }
+}
+
+@media (max-width: 1124px) {
+  nav {
+    display: none !important;
+
+  }
+}

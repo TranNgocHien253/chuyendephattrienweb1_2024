@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Montserrat, sans-serif;
+}
+.type-3188 {
+  margin: 0 16px 0 16px;
+  border-bottom: 1px solid #a4b099;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 70px;
+}
+.type-3188 .logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.type-3188 .navfake {
+  display: none;
+  justify-content: center;
+}
+.type-3188 nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.type-3188 nav .focusnav {
+  margin: 16px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.type-3188 nav .focusnav a {
+  color: #a4b099;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.type-3188 nav .focusnav a:hover {
+  color: #00000088;
+}
+.type-3188 nav .focusnav span {
+  content: "";
+  width: calc(116%);
+  height: 13px;
+  background: #e9ebe7;
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.type-3188 nav .labala {
+  position: fixed;
+  visibility: hidden;
+  top: 70px;
+  background-color: #ffffff;
+  padding: 16px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+}
+.type-3188 nav .labala a {
+  color: #a4b099;
+  font-weight: lighter;
+  text-decoration: none;
+  margin: 8px 0;
+  padding: 5px 0;
+  transition: color 0.3s;
+}
+.type-3188 nav .labala a:hover {
+  color: #007bff;
+}
+.type-3188 nav .hovernav {
+  display: flex;
+  align-items: center;
+  margin: 0 16px;
+  padding: 10px;
+  position: relative;
+}
+.type-3188 nav .hovernav a {
+  color: #a4b099;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+.type-3188 nav .hovernav a span {
+  content: "";
+  width: calc(116%);
+  height: 13px;
+  position: absolute;
+  top: 50%;
+  left: -120%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  transition: left 0.3s cubic-bezier(0.19,1,0.22,1);
+}
+.type-3188 nav .hovernav .dropdown {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  z-index: 1;
+  width: 250px;
+  max-height: 0;
+  overflow: hidden;
+  padding: 16px;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s 0.3s;
+}
+.type-3188 nav .hovernav .dropdown a {
+  color: #a4b099;
+  padding: 5px 15px;
+  text-decoration: none;
+  display: block;
+  font-weight: lighter;
+}
+.type-3188 nav .hovernav .dropdown a:hover {
+  color: #00000088;
+}
+.type-3188 nav .hovernav:hover span {
+  left: calc(-8%);
+  background: #e9ebe7;
+}
+.type-3188 nav #Shop:hover #lightShop {
+  color: #00000088;
+}
+.type-3188 nav #Shop:hover 
+      #dropdownShop {
+  max-height: 1000dvh;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+}
+.type-3188 nav #Store:hover #lightStore {
+  color: #00000088;
+}
+.type-3188 nav #Store:hover #dropdownStore {
+  max-height: 1000dvh;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+}
+.type-3188 nav #Home:hover #lightHome {
+  color: #00000088;
+}
+.type-3188 nav #Home:hover #dropdownHome {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+}
+.type-3188 nav #Pages:hover #lightPages {
+  color: #00000088;
+}
+.type-3188 nav #Pages:hover #dropdownPages {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+}
+.type-3188 nav #Blog:hover #lightBlog {
+  color: #00000088;
+}
+.type-3188 nav #Blog:hover #dropdownBlog {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+}
+.type-3188 nav #Landing:hover #lightLanding {
+  color: #00000088;
+}
+.type-3188 nav #Landing:hover #dropdownLanding {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease, visibility 0s;
+}
+.type-3188 .icons {
+  display: flex;
+  gap: 50px;
+  justify-content: end;
+  transform: translateY(-20%);
+}
+.type-3188 .icons .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.type-3188 .icons .login a {
+  color: #a4b099;
+  font-size: 16px;
+  text-decoration: none;
+}
+.type-3188 .icons .cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.type-3188 .icons .cart a {
+  color: #a4b099;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+}
+.type-3188 .icons .cart svg {
+  position: absolute;
+  transform: translateY(-5px);
+}
+.type-3188 .icons .pointhover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.type-3188 .icons .pointhover .gridpoint {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 5px;
+  line-height: 5px;
+}
+.type-3188 .icons .pointhover .gridpoint .dot {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a4b099;
+  font-size: 16px;
+  transition: all .3s ease-in-out;
+}
+.type-3188 .icons .pointhover .gridpoint:hover .dot:nth-child(4) {
+  transform: translate(200%,0%);
+}
+.type-3188 .icons .pointhover .gridpoint:hover .dot:nth-child(8) {
+  transform: translate(0%,-200%);
+}
+.type-3188 .icons .pointhover .gridpoint:hover .dot:nth-child(7) {
+  transform: translate(200%,-200%);
+}
+#Shop:hover ~ .labala {
+  visibility: visible;
+}
+.Healthy {
+  border-bottom: 1px solid #a4b099;
+  margin: 0 16px 0 16px;
+  padding: 16px 20% 16px 20%;
+}
+.Healthy h1 {
+  margin: 0;
+}
+.Healthy a {
+  color: #a4b099;
+}
+.Healthy span {
+  color: #a4b099;
+}
+@media (max-width: 1124px) {
+  nav {
+    display: none !important;
+  }
+}

@@ -11,25 +11,23 @@ $url_path = $url_host . $matches[1][0];
 
 $url_path = str_replace('\\', '/', $url_path);
 ?>
-    <div class="container">
-        <div class="main-content">
+<div class="row type-3073">
+        <div class="col-sm-6 main-content">
             <div class="post-card">
                 <img src="3073-screenshot.jpg" alt="Post Image" class="post-image">
-                <div class="post-content">
-                    <h2>Lorem Ipsum Dolor</h2>
-                    <div class="post-info">
-                        <span class="date"><i class="fa fa-calendar"></i>May 14, 2017</span> |
-                        <span class="author"><i class="fa fa-user"></i>admin</span>
-                    </div>
-                    <p>
+                <h2>Lorem Ipsum Dolor</h2>
+                <div class="post-info">
+                    <span class="date"><i class="fa fa-calendar"></i>May 14, 2017</span> |
+                    <span class="author"><i class="fa fa-user"></i>admin</span>
+                </div>
+                <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur odit, necessitatibus accusantium assumenda accusamus unde atque nisi sint fuga rem, ut aut reprehenderit ad tempora quisquam? A id fuga recusandae!Lorem ...
                     </p>
                     <button class="read-more">Read More</button>
-                </div>
             </div>
         </div>
 
-        <aside class="sidebar">
+        <aside class="col-sm-3 sidebar">
             <div class="search-box">
                 <input type="text" placeholder="Search">
                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -37,8 +35,6 @@ $url_path = str_replace('\\', '/', $url_path);
 
             <div class="recent-posts">
                     <h3>Recent Posts<div class="unline"></div></h3>
-                    
-                
                 <ul>
                     <li>Lorem ipsum dolor</li>
                     <li>Consectetur odit...</li>
