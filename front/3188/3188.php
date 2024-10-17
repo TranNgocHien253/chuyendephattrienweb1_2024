@@ -28,7 +28,6 @@ $less->compileFile('less/3188.less', 'css/3188.css');
     <link href="<?php echo $url_path ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo $url_path ?>/css/3188.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>

@@ -37,13 +37,13 @@ body {
   align-items: center;
 }
 .type-3188 nav .focusnav a {
-  color: #a4b099;
+  color: #00000088;
   font-size: 16px;
   text-decoration: none;
   font-weight: bold;
 }
 .type-3188 nav .focusnav a:hover {
-  color: #00000088;
+  color: #a4b099;
 }
 .type-3188 nav .focusnav span {
   content: "";
@@ -86,7 +86,7 @@ body {
   position: relative;
 }
 .type-3188 nav .hovernav a {
-  color: #a4b099;
+  color: #00000088;
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -128,7 +128,7 @@ body {
   font-weight: lighter;
 }
 .type-3188 nav .hovernav .dropdown a:hover {
-  color: #00000088;
+  color: #a4b099;
 }
 .type-3188 nav .hovernav:hover span {
   left: calc(-8%);
